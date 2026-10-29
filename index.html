@@ -1,0 +1,327 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SehatKita - Antrean Online Puskesmas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="#">
+      <span class="brand-icon">✚</span>
+      <span>
+        <strong>Sehat<span>Kita</span></strong>
+        <small>Pelayanan Kesehatan Digital</small>
+      </span>
+    </a>
+
+    <nav>
+      <a class="active" href="#beranda">⌂ Beranda</a>
+      <a href="#antrean">Antrean Saya</a>
+      <a href="#layanan">Rekam Medis</a>
+      <a href="#layanan">Imunisasi Anak</a>
+      <a href="#layanan">Posyandu</a>
+      <a href="#layanan">Cari Donor Darah</a>
+    </nav>
+
+    <button class="login-btn" onclick="alert('Fitur login petugas masih berupa demo.')">
+      ♟ Login Petugas
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="hero-copy">
+        <span class="eyebrow">ANTREAN ONLINE PUSKESMAS / KLINIK</span>
+
+        <h1>
+          Lebih Mudah, Lebih Cepat<br>
+          dengan <span>Antrean Online</span>
+        </h1>
+
+        <p>
+          Daftar antrean klinik / puskesmas secara online, pilih poli,
+          tentukan jadwal, dan dapatkan nomor antrean tanpa harus
+          mengantre dari pagi.
+        </p>
+
+        <div class="benefits">
+          <div>
+            <span class="benefit-icon">◷</span>
+            <p><b>Praktis</b><br>dari rumah</p>
+          </div>
+          <div>
+            <span class="benefit-icon">♢</span>
+            <p><b>Data aman</b><br>dan terpercaya</p>
+          </div>
+          <div>
+            <span class="benefit-icon">♡</span>
+            <p><b>Pelayanan</b><br>lebih nyaman</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="clinic-scene" aria-label="Ilustrasi dokter dan puskesmas">
+        <span class="cloud cloud-one"></span>
+        <span class="cloud cloud-two"></span>
+
+        <div class="sun"></div>
+        <div class="tree tree-left"></div>
+        <div class="tree tree-right"></div>
+
+        <div class="clinic-building">
+          <div class="roof"></div>
+          <div class="clinic-sign">
+            <span>✚</span>
+            <b>PUSKESMAS</b>
+          </div>
+          <div class="clinic-window"></div>
+          <div class="clinic-door"></div>
+          <div class="clinic-window right-window"></div>
+        </div>
+
+        <!-- Tulisan ID sudah dihapus -->
+
+        <div class="doctor">
+          <div class="doctor-hair"></div>
+          <div class="doctor-face">
+            <span class="eye left-eye"></span>
+            <span class="eye right-eye"></span>
+            <span class="smile"></span>
+          </div>
+          <div class="doctor-neck"></div>
+          <div class="doctor-body">
+            <span class="shirt"></span>
+            <span class="coat"></span>
+            <span class="stethoscope">〰</span>
+            <span class="clipboard">✚</span>
+          </div>
+          <div class="doctor-arm"></div>
+        </div>
+      </div>
+
+      <form class="form-card" id="queueForm">
+        <h2>♟ Daftar Antrean Sekarang</h2>
+        <p class="form-subtitle">
+          Isi data untuk mendapatkan nomor antrean.
+        </p>
+
+        <div class="form-grid">
+          <label>
+            Nama Lengkap
+            <input id="nama" type="text" placeholder="Masukkan nama lengkap" required>
+          </label>
+
+          <label>
+            NIK
+            <input id="nik" type="text" inputmode="numeric" maxlength="16" placeholder="16 digit NIK" required>
+          </label>
+
+          <label>
+            Tanggal Kunjungan
+            <input id="tanggal" type="date" required>
+          </label>
+
+          <label>
+            Pilih Poli
+            <select id="poli" required>
+              <option value="">-- Pilih Poli --</option>
+              <option>Poli Umum</option>
+              <option>Poli Gigi</option>
+              <option>Poli KIA</option>
+              <option>Poli Anak</option>
+              <option>Imunisasi</option>
+            </select>
+          </label>
+
+          <label class="full">
+            Keluhan Pasien
+            <textarea id="keluhan" rows="2" placeholder="Tuliskan keluhan secara singkat"></textarea>
+          </label>
+        </div>
+
+        <button class="primary-btn" type="submit">
+          ➤ &nbsp; Ambil Nomor Antrean
+        </button>
+
+        <p class="form-message" id="formMessage"></p>
+      </form>
+    </section>
+
+    
+<section class="service-strip" id="layanan">
+
+  <a class="service-item" href="#antrean">
+    <span class="service-number teal">✚</span>
+    <span>
+      <b>Antrean Online Klinik/Puskesmas</b>
+      <small>Daftar dengan mudah dan cepat.</small>
+    </span>
+  </a>
+
+  <a class="service-item" href="#antrean">
+    <span class="service-number blue">🩺</span>
+    <span>
+      <b>Rekam Medis Sederhana</b>
+      <small>Simpan riwayat kesehatan Anda dan keluarga.</small>
+    </span>
+  </a>
+
+  <a class="service-item" href="#antrean">
+    <span class="service-number green">💉</span>
+    <span>
+      <b>Pengingat Jadwal Imunisasi Anak</b>
+      <small>Jangan lewatkan jadwal imunisasi si kecil.</small>
+    </span>
+  </a>
+
+  <a class="service-item" href="#antrean">
+    <span class="service-number orange">👶</span>
+    <span>
+      <b>Sistem Informasi Posyandu</b>
+      <small>Pantau tumbuh kembang anak dan kegiatan posyandu.</small>
+    </span>
+  </a>
+
+  <a class="service-item" href="#donor">
+    <span class="service-number red">🩸</span>
+    <span>
+      <b>Cari Pendonor Darah</b>
+      <small>Bantu sesama, temukan pendonor darah terdekat.</small>
+    </span>
+  </a>
+
+</section>
+
+
+    <section class="dashboard" id="antrean">
+      <div class="table-card">
+        <div class="section-heading">
+          <div>
+            <h2>Daftar Antrean Terdaftar</h2>
+            <p>Antrean berdasarkan pendaftaran di browser ini.</p>
+          </div>
+          <span class="patient-count" id="patientCount">♟ &nbsp;0 Pasien</span>
+        </div>
+
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Nomor Antrean</th>
+                <th>Nama Pasien</th>
+                <th>Poli</th>
+                <th>Tanggal Kunjungan</th>
+                <th>Status</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody id="queueRows"></tbody>
+          </table>
+        </div>
+
+        <div class="empty-state" id="emptyState">
+          <span class="empty-icon">▤</span>
+          <b>Belum ada antrean</b>
+          <p>Silakan mendaftar untuk mendapatkan nomor antrean.</p>
+        </div>
+
+        <small class="table-foot" id="tableFoot">
+          Menampilkan 0 data antrean
+        </small>
+      </div>
+
+      <aside class="ticket-card">
+        <div class="success-heading">
+          <span class="check-icon">✓</span>
+          <div>
+            <h2 id="ticketTitle">Pendaftaran Berhasil!</h2>
+            <p id="ticketSubtitle">Nomor antrean akan muncul setelah pendaftaran.</p>
+          </div>
+        </div>
+
+        <div class="ticket">
+          <div class="ticket-number">
+            <small>NOMOR ANTREAN</small>
+            <strong id="ticketNumber">A001</strong>
+            <b id="ticketPoli">Poli Umum</b>
+          </div>
+
+          <div class="ticket-details">
+            <p>♟
+              <span>
+                <small>Nama Pasien</small>
+                <b id="ticketName">-</b>
+              </span>
+            </p>
+            <p>▦
+              <span>
+                <small>Tanggal Kunjungan</small>
+                <b id="ticketDate">-</b>
+              </span>
+            </p>
+            <p>◷
+              <span>
+                <small>Perkiraan Pelayanan</small>
+                <b id="ticketTime">-</b>
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <div class="ticket-actions">
+          <button class="primary-btn" onclick="printTicket()">
+            ▣ &nbsp; Cetak Bukti Antrean
+          </button>
+          <button class="outline-btn" onclick="document.getElementById('nama').focus()">
+            ⌂ &nbsp; Kembali ke Form
+          </button>
+        </div>
+      </aside>
+    </section>
+
+    <section class="extra-services" id="donor">
+      <div>
+        <span>♡</span>
+        <h3>Rekam Medis</h3>
+        <p>Catat riwayat pemeriksaan kesehatan keluarga dengan mudah.</p>
+      </div>
+      <div>
+        <span>♧</span>
+        <h3>Imunisasi Anak</h3>
+        <p>Atur pengingat jadwal imunisasi agar tidak terlewat.</p>
+      </div>
+      <div>
+        <span>✚</span>
+        <h3>Informasi Posyandu</h3>
+        <p>Dapatkan informasi kegiatan dan pemantauan tumbuh kembang.</p>
+      </div>
+      <div>
+        <span>♥</span>
+        <h3>Pencarian Donor Darah</h3>
+        <p>Siapkan informasi pendonor untuk kebutuhan darurat.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#">
+      <span class="brand-icon">✚</span>
+      <span>
+        <strong>SehatKita</strong>
+        <small>Pelayanan Kesehatan Digital</small>
+      </span>
+    </a>
+
+    <div>Puskesmas &nbsp; | &nbsp; Klinik &nbsp; | &nbsp; Posyandu &nbsp; | &nbsp; Donor Darah</div>
+    <small>© 2026 SehatKita — Proyek Demonstrasi</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
